@@ -72,3 +72,59 @@ Add a foreign key constraint to the table "Orders" referencing the "customer_id"
 Create a table named "Products" with a check constraint that ensures the column "price" is greater than 0.
 Add a not null constraint to the column "first_name" in the table "Employees".
 Create a table named "Students" with a unique constraint on the combination of columns "student_id" and "email".
+
+#Unique
+Create a table named "Employees" with a unique constraint on the column "employee_id" to ensure each employee has a unique identifier.
+Add a unique constraint to the column "email" in the existing table "Customers" to enforce that each customer has a unique email address.
+Create a table named "Books" with a unique constraint on the column "isbn" to ensure that each book has a unique International Standard Book Number.
+Add a unique constraint to the combination of columns "username" and "domain" in the table "Emails" to ensure that each email address is unique.
+Create a table named "Students" with a unique constraint on the column "student_id" to ensure that each student has a unique identification number.
+
+#Primary key
+Create a table named "Employees" with a primary key on the column "employee_id" to uniquely identify each employee.
+Add a primary key constraint to the existing table "Customers" on the column "customer_id" to ensure each customer has a unique identifier.
+Create a table named "Books" with a primary key on the column "isbn" to uniquely identify each book using its International Standard Book Number.
+Add a primary key constraint to the combination of columns "username" and "domain" in the table "Emails" to ensure that each email address is unique and identifiable.
+Create a table named "Students" with a primary key on the column "student_id" to uniquely identify each student in the database.
+
+#Foreign key
+Create a table named "Orders" with a foreign key constraint on the column "customer_id" referencing the "customer_id" column in the "Customers" table.
+Add a foreign key constraint to the existing table "Books" on the column "author_id" referencing the "author_id" column in the "Authors" table.
+Create a table named "Enrollments" with foreign key constraints on the columns "student_id" and "course_id" referencing the "student_id" and "course_id" columns in the "Students" and "Courses" tables, respectively.
+Add a foreign key constraint to the table "Employees" on the column "manager_id" referencing the "employee_id" column in the same "Employees" table to represent a self-referencing relationship.
+Create a table named "Sales" with foreign key constraints on the columns "product_id" and "customer_id" referencing the "product_id" and "customer_id" columns in the "Products" and "Customers" tables, respectively.
+
+#Check 
+Create a table named "Employees" with a check constraint on the column "age" to ensure that the age is greater than or equal to 18.
+Add a check constraint to the existing table "Products" to ensure that the "quantity" column is greater than 0.
+Create a table named "Students" with a check constraint on the column "grade" to ensure that the grade is within the range of 'A' to 'F'.
+Add a check constraint to the table "Orders" to ensure that the "order_date" column is not in the future.
+Create a table named "Inventory" with a check constraint on the column "price" to ensure that the price is greater than or equal to 0.
+
+#Index
+Create an index on the column "last_name" in the table "Employees" to improve the performance of queries that involve searching or sorting by last name.
+Add a unique index to the column "email" in the table "Customers" to enforce uniqueness and optimize the retrieval of records by email.
+Create a composite index on the columns "category" and "price" in the table "Products" to speed up queries that filter or order by both columns simultaneously.
+Add a clustered index to the primary key column "student_id" in the table "Students" to physically order the table based on the primary key for faster data retrieval.
+Create a non-clustered index on the column "order_date" in the table "Orders" to enhance the performance of queries that involve filtering or sorting by order date.
+
+#Auto Increment
+Create a table named "Employees" with an auto-increment primary key column named "employee_id" to automatically generate unique identifiers for each employee.
+Insert a new record into the table "Customers" while utilizing the auto-increment feature to automatically assign a new customer ID.
+Alter the existing table "Orders" to add an auto-increment column named "order_number" that generates a unique order number for each new order.
+Retrieve the last inserted auto-increment value from a table using the "LAST_INSERT_ID()" function.
+Remove the auto-increment property from a column named "product_id" in the table "Products" using an ALTER TABLE statement.
+
+#Dates
+Retrieve all records from the table "Orders" where the order date is equal to today's date.
+Calculate the average age of employees based on their birthdates stored in the column "birthdate" in the table "Employees".
+Retrieve all records from the table "Events" where the event date is greater than or equal to a specific date, such as '2023-01-01'.
+Find the total number of orders placed in a specific month and year from the table "Orders" using the "DATEPART" or "EXTRACT" function.
+Update the "DueDate" column in the table "Tasks" to be seven days from the current date using the "DATE_ADD" or "DATE_ADD" function.
+
+#Views
+Create a view named "ActiveCustomers" that includes all active customers from the table "Customers" where the "status" column is set to 'active'.
+Create a view named "HighValueProducts" that includes all products from the table "Products" where the price is greater than $100.
+Create a view named "SalesReport" that combines information from the "Orders" and "Customers" tables to provide a comprehensive sales report, including order details and customer information.
+Create a view named "EmployeeStats" that aggregates data from the "Employees" table, providing statistics such as the total number of employees, average salary, and maximum salary.
+Create a view named "RecentOrders" that includes the most recent orders from the "Orders" table, sorting them by the order date in descending order.
