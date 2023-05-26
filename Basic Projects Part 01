@@ -187,3 +187,108 @@ Find all projects that have been worked on by employees.
 Find all customers who have placed an order for a product that is made in China.
 
 #Left join
+Find all customers and their orders, even if the customer has not placed any orders.
+Find all products and their suppliers, even if the product is not supplied by any supplier.
+Find all employees and their managers, even if the employee does not have a manager.
+Find all customers who have placed an order for a product that is made in China, even if the customer has not placed any other orders.
+Find all employees who have worked on a project that is over budget, even if the employee has not worked on any other projects.
+
+#Right Join
+Find all orders and their customers, even if the customer has not placed any orders.
+Find all products and their suppliers, even if the product is not supplied by any supplier.
+Find all employees and their managers, even if the employee does not have a manager.
+Find all customers who have placed an order for a product that is made in China, even if the product has not been ordered by any other customers.
+Find all employees who have worked on a project that is over budget, even if the project has not been worked on by any other employees.
+
+#Full Join
+Find all customers and their orders, including customers who have not placed any orders and orders that have not been placed by any customers.
+Find all products and their suppliers, including products that are not supplied by any supplier and suppliers that do not supply any products.
+Find all employees and their managers, including employees who do not have a manager and managers who do not have any employees.
+Find all customers who have placed an order for a product that is made in China, including customers who have not placed any other orders and products that have not been ordered by any other customers.
+Find all employees who have worked on a project that is over budget, including employees who have not worked on any other projects and projects that have not been worked on by any other employees.
+
+#Self Join
+Find all customers who have placed an order for a product that is made in China.
+Find all products that have been ordered by more than one customer.
+Find all employees who have worked on the same project.
+Find all customers who have placed an order for a product that is also ordered by their manager.
+Find all employees who have worked on a project that is also worked on by their manager.
+
+#Union
+Write a SQL query to combine the data from the customers and orders tables.
+Write a SQL query to combine the data from the products and categories tables, and remove any duplicate rows.
+Write a SQL query to combine the data from the employees and departments tables, and order the results by the employee's name.
+Write a SQL query to combine the data from the sales and customers tables, and calculate the total sales for each customer.
+Write a SQL query to combine the data from the products and reviews tables, and only include products that have at least 5 stars.
+
+#Groupby
+Write a SQL query to find the number of customers in each country.
+Write a SQL query to find the average order value for each product category.
+Write a SQL query to find the most popular product by sales volume.
+Write a SQL query to find the least popular product by sales volume.
+Write a SQL query to find the average salary for each department.
+
+#Having
+Write a SQL query to find the countries with more than 100 customers.
+Write a SQL query to find the product categories with an average order value of more than $100.
+Write a SQL query to find the products with more than 100 units sold.
+Write a SQL query to find the departments with an average salary of more than $100,000.
+Write a SQL query to find the customers who have placed more than 10 orders.
+
+#Exists
+Write a SQL query to find all customers who have placed an order.
+Write a SQL query to find all products that have been ordered.
+Write a SQL query to find all customers who have placed an order for a product in a specific category.
+Write a SQL query to find all products that have been ordered by a customer in a specific country.
+Write a SQL query to find all customers who have placed an order for a product that is on sale.
+
+#Any
+Write a SQL query to find the top 10 most popular products.
+Write a SQL query to find the average salary for each department.
+Write a SQL query to find the most recent order placed by each customer.
+Write a SQL query to find the number of orders placed by each customer in the past month.
+Write a SQL query to find the products that have been ordered by more than 100 customers.
+
+#all
+Write a SQL query to find all customers who have placed an order for a product in a specific category.
+Write a SQL query to find all products that have been ordered by a customer in a specific country.
+Write a SQL query to find all customers who have placed an order for a product that is on sale.
+Write a SQL query to find the top 10 most popular products.
+Write a SQL query to find the average salary for each department.
+
+
+#Selectinto
+Write a SQL query to create a new table called customers_with_orders that contains the customer name and order id from the customers and orders tables.
+Write a SQL query to create a new table called products_in_stock that contains the product name and quantity in stock from the products and inventory tables.
+Write a SQL query to create a new table called sales_by_month that contains the month, total sales, and average sales for each month from the sales table.
+Write a SQL query to create a new table called top_selling_products that contains the product name, quantity sold, and total sales for the top 10 selling products from the sales table.
+Write a SQL query to create a new table called customers_with_pending_orders that contains the customer name and order id from the customers and orders tables where the order status is pending.
+
+#insert into
+Write a SQL query to insert all customers from the customers table into a new table called new_customers.
+Write a SQL query to insert all products from the products table into a new table called new_products where the product price is greater than $100.
+Write a SQL query to insert all orders from the orders table into a new table called new_orders where the order date is in the current month.
+Write a SQL query to insert all customers from the customers table into a new table called new_customers where the customer name starts with the letter A.
+Write a SQL query to insert all products from the products table into a new table called new_products where the product category is electronics.
+
+#case
+Write a query to find the total number of orders placed by each customer.
+Write a query to find the average order value for each product category.
+Write a query to find the top 10 customers who have placed the most orders.
+Write a query to find the products that have been ordered the most times.
+Write a query to find the customers who have placed orders in the past 3 months.
+
+#Null
+Write a query to find all the customers who have a null value in their email column.
+Write a query to find all the products that have a null value in their price column.
+Write a query to find all the orders that have a null value in their order_date column.
+Write a query to find all the customers who have a null value in their email column, but do not have a null value in their phone column.
+Write a query to find all the products that have a null value in their price column, but do not have a null value in their quantity column.
+
+
+
+
+
+
+
+
