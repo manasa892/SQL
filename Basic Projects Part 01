@@ -1,1 +1,189 @@
+#Select
+Write an SQL query to retrieve all the records from the employees table.
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000.
+Write an SQL query to retrieve all the records from the employees table where the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A.
+Write an SQL query to retrieve all the records from the employees table where the salary is between 100000 and 200000.
 
+#Distinct 
+Write an SQL query to retrieve all the distinct departments from the employees table.
+Write an SQL query to retrieve all the distinct salary values from the employees table where the salary is greater than 100000.
+Write an SQL query to retrieve all the distinct names from the employees table where the name starts with A.
+Write an SQL query to retrieve all the distinct salary values from the employees table where the salary is between 100000 and 200000.
+Write an SQL query to retrieve all the distinct departments from the employees table where the department is not Sales.
+
+#Where
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000.
+Write an SQL query to retrieve all the records from the employees table where the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A.
+Write an SQL query to retrieve all the records from the employees table where the salary is between 100000 and 200000.
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 and the department is Sales.
+
+#And
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 and the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A and the salary is greater than 100000.
+Write an SQL query to retrieve all the records from the employees table where the salary is between 100000 and 200000 and the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A and the salary is between 100000 and 200000.
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 or the department is Sales.
+
+#OR
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 or the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A or the salary is greater than 100000.
+Write an SQL query to retrieve all the records from the employees table where the salary is between 100000 and 200000 or the department is Sales.
+Write an SQL query to retrieve all the records from the employees table where the name starts with A or the salary is between 100000 and 200000.
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 or the department is Sales or the name starts with A.
+
+#NOT
+Write an SQL query to retrieve all the records from the employees table where the salary is not greater than 100000.
+Write an SQL query to retrieve all the records from the employees table where the department is not Sales.
+Write an SQL query to retrieve all the records from the employees table where the name does not start with A.
+Write an SQL query to retrieve all the records from the employees table where the salary is not between 100000 and 200000.
+Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000 and the department is not Sales.
+
+#OrderBy
+Write an SQL query to retrieve all the records from the employees table ordered by salary in ascending order.
+Write an SQL query to retrieve all the records from the employees table ordered by department in descending order.
+Write an SQL query to retrieve all the records from the employees table ordered by name in ascending order, and then by salary in descending order.
+Write an SQL query to retrieve all the records from the employees table ordered by salary in ascending order, but only the first 10 records.
+Write an SQL query to retrieve all the records from the employees table ordered by salary in ascending order, but only the records where the salary is greater than 100000.
+
+#Insert Into
+Write an SQL query to insert a new record into the employees table with the following values:
+name: John Doe
+salary: 100000
+department: Sales
+Write an SQL query to insert a new record into the employees table with the following values:
+name: Jane Doe
+salary: 200000
+department: Marketing
+Write an SQL query to insert a new record into the employees table with the following values:
+name: Peter Smith
+salary: 300000
+department: Engineering
+Write an SQL query to insert a new record into the employees table with the following values:
+name: Mary Jones
+salary: 400000
+department: IT
+Write an SQL query to insert a new record into the employees table with the following values:
+name: David Brown
+salary: 500000
+department: Operations
+
+#NULL
+Write an SQL query to retrieve all the records from the employees table where the salary is NULL.
+Write an SQL query to retrieve all the records from the employees table where the department is NULL.
+Write an SQL query to retrieve all the records from the employees table where the name is NULL.
+Write an SQL query to retrieve all the records from the employees table where the salary is NULL or the department is NULL.
+Write an SQL query to retrieve all the records from the employees table where the salary is NOT NULL.
+
+#Update
+Write an SQL query to update the salary of all employees to 100000.
+Write an SQL query to update the department of all employees to Sales.
+Write an SQL query to update the name of all employees to John Doe.
+Write an SQL query to update the salary of all employees where the department is Sales to 200000.
+Write an SQL query to update the department of all employees where the name is John Doe to Marketing.
+
+#Delete 
+Write an SQL query to delete all the records from the employees table.
+Write an SQL query to delete all the records from the employees table where the salary is greater than 100000.
+Write an SQL query to delete all the records from the employees table where the department is Sales.
+Write an SQL query to delete all the records from the employees table where the name starts with A.
+Write an SQL query to delete all the records from the employees table where the salary is greater than 100000 or the department is Sales.
+
+#Select Top
+Write an SQL query to retrieve the top 10 records from the employees table ordered by salary in descending order.
+Write an SQL query to retrieve the top 5 records from the employees table where the department is Sales ordered by name in ascending order.
+Write an SQL query to retrieve the top 3 records from the employees table where the salary is greater than 100000 ordered by department in descending order.
+Write an SQL query to retrieve the top 2 records from the employees table where the name starts with A ordered by salary in ascending order.
+Write an SQL query to retrieve the top 1 record from the employees table where the department is Sales and the salary is greater than 100000 ordered by name in ascending order.
+
+#MIN
+Write an SQL query to retrieve the minimum salary from the employees table.
+Write an SQL query to retrieve the minimum salary from the employees table where the department is Sales.
+Write an SQL query to retrieve the minimum salary from the employees table where the salary is greater than 100000.
+Write an SQL query to retrieve the minimum salary from the employees table where the name starts with A.
+Write an SQL query to retrieve the minimum salary from the employees table where the department is Sales and the salary is greater than 100000.
+
+#Max
+Write an SQL query to retrieve the maximum salary from the employees table.
+Write an SQL query to retrieve the maximum salary from the employees table where the department is Sales.
+Write an SQL query to retrieve the maximum salary from the employees table where the salary is greater than 100000.
+Write an SQL query to retrieve the maximum salary from the employees table where the name starts with A.
+Write an SQL query to retrieve the maximum salary from the employees table where the department is Sales and the salary is greater than 100000.
+
+#Count
+Write an SQL query to count the number of records in the employees table.
+Write an SQL query to count the number of records in the employees table where the department is Sales.
+Write an SQL query to count the number of records in the employees table where the salary is greater than 100000.
+Write an SQL query to count the number of records in the employees table where the name starts with A.
+Write an SQL query to count the number of records in the employees table where the department is Sales and the salary is greater than 100000.
+
+#Avg 
+What is the average age of all employees in the company?
+What is the average salary of all employees in the sales department?
+What is the average number of sales made per month by all sales representatives?
+What is the average time it takes to process a customer order?
+What is the average number of customer complaints received per week?
+
+#Sum
+What is the total sales for the month of January?
+What is the total number of products sold in the last quarter?
+What is the total amount of money spent on marketing in the past year?
+What is the total number of customers who have signed up for the newsletter?
+What is the total number of website visits in the last week?
+
+#Like
+Find all customers whose names start with the letter "A".
+Find all products whose names contain the word "computer".
+Find all orders that were placed in the month of January.
+Find all employees who were born in the 1980s.
+Find all customers who have made a purchase in the last 30 days.
+
+#Wildcards
+Find all customers whose names start with the letter "A".
+Find all products whose names contain the word "computer".
+Find all orders that were placed in the month of January.
+Find all employees who were born in the 1980s.
+Find all customers who have made a purchase in the last 30 days.
+Find all customers whose names start with the letter "A" and end with the letter "s".
+Find all products whose names contain the word "computer" and are less than 10 characters long.
+Find all orders that were placed in the month of January and were for more than $100.
+Find all employees who were born in the 1980s and are still employed by the company.
+Find all customers who have made a purchase in the last 30 days and have spent more than $100.
+
+#IN
+Find all customers who live in the United States.
+Find all products that are made in China.
+Find all orders that were placed by customers who are over the age of 18.
+Find all employees who work in the sales department.
+Find all customers who have made a purchase in the last 30 days and have spent more than $100.
+
+#Between
+Find all customers whose ages are between 18 and 25.
+Find all products whose prices are between $100 and $200.
+Find all orders that were placed between January 1st and March 31st.
+Find all employees who were hired between 2010 and 2020.
+Find all customers who have made a purchase in the last 30 days and have spent between $100 and $200.
+
+#Aliases
+Find the average age of all customers and name the alias "avg_age".
+Find the total sales for the month of January and name the alias "total_sales".
+Find the number of products that are sold in the last quarter and name the alias "num_products".
+Find the number of employees who are over the age of 18 and name the alias "num_employees".
+Find the total amount of money spent on marketing in the past year and name the alias "total_marketing_spend".
+
+#Joins
+Find all customers and their orders.
+Find all products and their suppliers.
+Find all employees and their managers.
+Find all customers who have placed an order for a product that is made in China.
+Find all employees who have worked on a project that is over budget.
+
+#Inner Join
+Find all customers who have placed an order.
+Find all products that have been ordered.
+Find all employees who have worked on a project.
+Find all projects that have been worked on by employees.
+Find all customers who have placed an order for a product that is made in China.
+
+#Left join
