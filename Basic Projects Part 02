@@ -1,1 +1,74 @@
+#CreateDB
+Create a database called "Employees" with the following tables:
 
+"Employee" with columns: employee_id (integer, primary key), first_name (varchar), last_name (varchar), and salary (decimal).
+"Department" with columns: department_id (integer, primary key), department_name (varchar), and location (varchar).
+Create a table named "Products" in the "Inventory" database with the following columns:
+
+"product_id" (integer, primary key),
+"product_name" (varchar),
+"price" (decimal),
+"quantity" (integer).
+Add a column named "email" of data type "varchar" to the existing table "Customers" in the "Sales" database.
+
+Create a table named "Orders" with the following columns:
+
+"order_id" (integer, primary key),
+"customer_id" (integer, foreign key referencing "customer_id" in the "Customers" table),
+"order_date" (date),
+"total_amount" (decimal).
+Create a database called "Library" with the following tables:
+
+"Books" with columns: book_id (integer, primary key), title (varchar), author (varchar), and publication_year (integer).
+"Authors" with columns: author_id (integer, primary key), author_name (varchar), and nationality (varchar).
+
+
+#Create Table
+Create a table named "Students" with the following columns:
+
+"student_id" (integer, primary key),
+"first_name" (varchar),
+"last_name" (varchar),
+"age" (integer),
+"email" (varchar).
+Create a table named "Orders" with the following columns:
+
+"order_id" (integer, primary key),
+"customer_id" (integer),
+"order_date" (date),
+"total_amount" (decimal).
+Create a table named "Employees" with the following columns:
+
+"employee_id" (integer, primary key),
+"first_name" (varchar),
+"last_name" (varchar),
+"position" (varchar),
+"salary" (decimal).
+Create a table named "Products" with the following columns:
+
+"product_id" (integer, primary key),
+"product_name" (varchar),
+"price" (decimal),
+"quantity" (integer),
+"category" (varchar).
+Create a table named "Customers" with the following columns:
+
+"customer_id" (integer, primary key),
+"first_name" (varchar),
+"last_name" (varchar),
+"email" (varchar),
+"address" (varchar).
+
+#Alter table
+Add a new column named "phone_number" of data type "varchar" to the existing table "Customers".
+Modify the data type of the column "price" in the table "Products" to be "decimal(10,2)".
+Rename the table "Employees" to "Staff".
+Add a foreign key constraint to the table "Orders" referencing the "customer_id" column in the "Customers" table.
+Remove the column "age" from the table "Students".
+
+#Constraints
+Create a table named "Customers" with a primary key constraint on the column "customer_id" and a unique constraint on the column "email".
+Add a foreign key constraint to the table "Orders" referencing the "customer_id" column in the "Customers" table.
+Create a table named "Products" with a check constraint that ensures the column "price" is greater than 0.
+Add a not null constraint to the column "first_name" in the table "Employees".
+Create a table named "Students" with a unique constraint on the combination of columns "student_id" and "email".
