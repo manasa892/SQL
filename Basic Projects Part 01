@@ -1,9 +1,23 @@
 #1.Select
-1.Write an SQL query to retrieve all the records from the employees table.
-2.Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000.
-3.Write an SQL query to retrieve all the records from the employees table where the department is Sales.
-4.Write an SQL query to retrieve all the records from the employees table where the name starts with A.
-5.Write an SQL query to retrieve all the records from the employees table where the salary is between 100000 and 200000.
+#1.Write an SQL query to retrieve all the records from the BookStore table.
+use redinent;
+select * from BookStore;
+
+#2.Write an SQL query to retrieve all the records from the employees table where the bookprice is greater than 650.
+use redinent;
+select * from BookStore where bookprice > '650';
+
+#3.Write an SQL query to retrieve all the records from the employees table where the BookAuthor is ABC.
+use redinent;
+select * from BookStore where BookAuthor = "ABC";
+
+#4.Write an SQL query to retrieve all the records from the employees table where the Bookname starts with P.
+use redinent;
+select * from BookStore where Bookname like "p%";
+
+#5.Write an SQL query to retrieve all the records from the Bookprice table where the salary is between 400 and 600.
+use redinent;
+select * from BookStore where Bookprice between "400" AND "600";
 
 #2.Distinct 
 Write an SQL query to retrieve all the distinct departments from the employees table.
