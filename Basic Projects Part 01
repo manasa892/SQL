@@ -20,11 +20,26 @@ use redinent;
 select * from BookStore where Bookprice between "400" AND "600";
 
 #2.Distinct 
-Write an SQL query to retrieve all the distinct departments from the employees table.
-Write an SQL query to retrieve all the distinct salary values from the employees table where the salary is greater than 100000.
-Write an SQL query to retrieve all the distinct names from the employees table where the name starts with A.
-Write an SQL query to retrieve all the distinct salary values from the employees table where the salary is between 100000 and 200000.
-Write an SQL query to retrieve all the distinct departments from the employees table where the department is not Sales.
+#6.Write an SQL query to retrieve all the distinct departments from the BookStore table.
+use redinent;
+select distinct(BookAuthor) from BookStore;
+
+#7.Write an SQL query to retrieve all the distinct BookPrice values from the  table where the Bookprice is greater than 650.
+use redinent;
+select distinct(BookPrice) from BookStore where BookPrice > 650;
+
+#8.Write an SQL query to retrieve all the distinct BookEdition from the table where the name starts with E.
+use redinent;
+select distinct(BookName) from BookStore where Bookname like "E%"; 
+
+#9.Write an SQL query to retrieve all the distinct BookEdition from the  table where the Bookedition is between 4 and 9.
+use redinent;
+select distinct(BookEdition) from BookStore where Bookedition between "4" and "9";
+
+#10.Write an SQL query to retrieve all the distinct Bookname from the  table where the bookname is not Kibana.
+use redinent;
+select distinct(Bookname) from BookStore where Bookname <> "Kibana";
+
 
 #3.Where
 Write an SQL query to retrieve all the records from the employees table where the salary is greater than 100000.
