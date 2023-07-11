@@ -2,4 +2,4 @@
 between each user’s first post of the year and last post of the year in the year 2021. Output the user and number of the days 
 between each user's first and last post.
 
-SELECT user_id, count(post_date) AS days_betweem from posts  group by user_id having count(post_date) > 2;
+SELECT user_id, (MAX(post_date::DATE) - MIN(post_date::DATE)) AS days_betweem from posts where post_date between '2021-01-01' and '2021-12-31'  group by user_id having count(post_date) > 2;
