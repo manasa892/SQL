@@ -1,8 +1,17 @@
 #Assume you're given a table containing job postings from various companies on the LinkedIn platform. Write a query to retrieve 
 #the count of companies that have posted duplicate job listings.
 
-Select count(company_id) as duplicate_companies from job_listings group by (select count(DISTINCT(title))>1 from job_listings);
+with job_count_cte as 
+(select 
+company_id, 
+title, 
+description, 
+count(job_id) as job_count 
+from job_listings 
+group by company_id, title, description)
+select count(DISTINCT company_id) as duplicate_companies
+from job_count_cte
+where job_count >1;
 
 
-#Using the GROUP BY clause to group all rows by the target column(s) – i.e. the column(s) you want to check for duplicate values on. Using 
-#the COUNT function in the HAVING clause to check if any of the groups have more than 1 entry; those would be the duplicate values.
+
